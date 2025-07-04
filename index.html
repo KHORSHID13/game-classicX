@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>۵۰ بازی برتر سگا - تمام‌صفحه</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background: linear-gradient(135deg, #111, #1e1e1e);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      background: #0ff;
+      color: #000;
+      padding: 20px;
+      font-size: 1.8em;
+      font-weight: bold;
+      box-shadow: 0 0 20px #0ff;
+    }
+    .game-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .game {
+      background: #222;
+      border: 2px solid #0ff;
+      border-radius: 15px;
+      padding: 10px;
+      transition: transform 0.3s;
+      box-shadow: 0 0 10px #0ff;
+      cursor: pointer;
+    }
+    .game:hover {
+      transform: scale(1.05);
+    }
+    h2 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+      color: #0ff;
+    }
+
+    /* Fullscreen Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+    }
+    .modal iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #fff;
+      font-size: 2em;
+      z-index: 1000;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>🎮 پنجاه بازی برتر سگا - تمام‌صفحه</header>
+  <div class="game-list">
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19193-sonic-the-hedgehog-world-revision-a.html')"><h2>سونیک خارپشت</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19201-sonic-the-hedgehog-2.html')"><h2>سونیک خارپشت ۲</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19214-sonic-the-hedgehog-3.html')"><h2>سونیک خارپشت ۳</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19324-mortal-kombat.html')"><h2>مورتال کمبت ۱</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19326-mortal-kombat-2.html')"><h2>مورتال کمبت ۲</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19325-mortal-kombat-3.html')"><h2>مورتال کمبت ۳</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19242-streets-of-rage.html')"><h2>شورش در شهر ۱</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19243-streets-of-rage-2.html')"><h2>شورش در شهر ۲</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19244-streets-of-rage-3.html')"><h2>شورش در شهر ۳</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19405-teenage-mutant-ninja-turtles-hyperstone-heist.html')"><h2>لاک‌پشت‌های نینجا</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19050-shinobi-iii-return-of-the-ninja-master.html')"><h2>سایه نینجا</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19245-rambo-iii.html')"><h2>رامبو ۳</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19071-golden-axe.html')"><h2>گلدن اکس</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19251-double-dragon.html')"><h2>اژدهای دوقلو</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19134-alex-kidd-in-the-enchanted-castle.html')"><h2>الکس کید</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19092-road-rash-ii.html')"><h2>ماشین جنگی</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19097-world-cup-usa-94.html')"><h2>جام جهانی ۹۴</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19265-captain-america-and-the-avengers.html')"><h2>کاپیتان آمریکا</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19256-spider-man.html')"><h2>بازی مرد عنکبوتی</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19110-mega-man.html')"><h2>مگامن</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19112-mega-man-2.html')"><h2>مگامن ۲</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19113-mega-man-3.html')"><h2>مگامن ۳</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19114-mega-man-4.html')"><h2>مگامن ۴</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19115-mega-man-5.html')"><h2>مگامن ۵</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19120-donkey-kong-country.html')"><h2>دونکی کونگ</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19230-dungeon-master.html')"><h2>دانجن مستر</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19040-river-city-ransom.html')"><h2>ریو</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19375-kung-fu-panda.html')"><h2>کونگ فو پاندا</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19260-the-boss-baby.html')"><h2>بچه رئیس</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19198-super-formation-soccer-94.html')"><h2>سوپر فوتبال</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19205-tetris.html')"><h2>تتریکس</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19207-quick-man.html')"><h2>کوئیک من</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19220-super-mario-bros.html')"><h2>سوبر ماریو</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19130-santa-cruz.html')"><h2>سانتاکروز</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19280-olympic-summer-games.html')"><h2>ورزش‌های المپیک</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19150-konami-cross-soccer.html')"><h2>کونامی کراش</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19200-mr-x.html')"><h2>مستر ایکس</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19211-racing-car.html')"><h2>ماشین مسابقه‌ای</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19180-captain-football.html')"><h2>کاپیتان فوتبال</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19270-batman.html')"><h2>بتمن</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19256-spider-man.html')"><h2>اسپایدرمن</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19060-pac-man.html')"><h2>باکمن</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19290-formula-1.html')"><h2>فرمول ۱</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19300-star-wars.html')"><h2>جنگ ستارگان</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19310-king-kong.html')"><h2>کینگ کونگ</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19320-fantasy-football.html')"><h2>فانتزی فوتبالی</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19330-bill-and-ted.html')"><h2>بیل و تد</h2></div>
+    <div class="game" onclick="openGame('https://www.retrogames.cc/embed/19340-street-fights.html')"><h2>جنگ‌های خیابانی</h2></div>
+    
+  </div>
+
+  <div class="modal" id="gameModal">
+    <span class="close-btn" onclick="closeGame()">✖</span>
+    <iframe id="gameFrame" src=""></iframe>
+  </div>
+
+  <script>
+    function openGame(url) {
+      document.getElementById('gameFrame').src = url;
+      document.getElementById('gameModal').style.display = 'block';
+    }
+    function closeGame() {
+      document.getElementById('gameFrame').src = '';
+      document.getElementById('gameModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
